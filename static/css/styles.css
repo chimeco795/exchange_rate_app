@@ -1,0 +1,122 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.floating-controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.floating-controls.mini {
+    flex-direction: column;
+    align-items: center;
+}
+
+.floating-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-controls button i {
+    margin-right: 5px;
+}
+
+.floating-controls.mini button {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.currency-input {
+    text-align: right;
+}
+
+.toast-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1055;
+}
+
+.btn {
+    transition: transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+.btn-primary:hover {
+    background-color: #002244;
+    border-color: #002244;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.info-section {
+    margin-top: 20px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.clear-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+.sortable-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.sortable-header.sorted {
+    color: #555555;
+    /* Gris Oxford */
+    font-weight: normal;
+}
+
+.sortable-header i {
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .floating-controls {
+        right: 10px;
+    }
+}

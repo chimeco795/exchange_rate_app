@@ -1,0 +1,20 @@
+{
+    "name": "Exchange Rate App",
+    "short_name": "ExchangeRate",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#003366",
+    "icons": [
+        {
+            "src": "/static/icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

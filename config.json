@@ -1,0 +1,12 @@
+{
+    "source": "local",
+    "ftp": {
+        "host": "your.ftp.server",
+        "user": "your_username",
+        "pass": "your_password",
+        "file_path": "path/to/excel_file.xlsx"
+    },
+    "local": {
+        "file_path": "static/exchange_rates.xlsx"
+    }
+}
